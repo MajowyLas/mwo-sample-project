@@ -30,11 +30,11 @@ public class PitStop {
         this.meeting_key = meeting_key;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
