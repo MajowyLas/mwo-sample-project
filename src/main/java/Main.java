@@ -3,6 +3,8 @@ import loader.DataLoader;
 import model.PitStop;
 import service.PitStopCounter;
 import loader.DataLoader;
+import service.StartEndLaps;
+
 import java.util.List;
 import java.io.IOException;
 
@@ -16,6 +18,12 @@ public class Main {
 
 //            PitStopCounter counter = new PitStopCounter();
 //            counter.count(pitStops);
+
+            int firstLap = StartEndLaps.getFirstLap(pitStops);
+            int lastLap = StartEndLaps.getLastLap(pitStops);
+            System.out.println("Pierwszy pit stop był na okrążeniu: " + firstLap);
+            System.out.println("Ostatni pit stop był na okrążeniu: " + lastLap);
         }
+
 
 }
