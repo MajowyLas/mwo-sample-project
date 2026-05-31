@@ -6,7 +6,7 @@ import java.util.List;
 
 public class AveragePitStopDuration {
 
-    public float countPitStops(List<PitStop> pitStops) {
+    public static float countPitStops(List<PitStop> pitStops) {
         float count = 0;
         float sumDuration = 0;
         for (PitStop pitStop : pitStops) {
