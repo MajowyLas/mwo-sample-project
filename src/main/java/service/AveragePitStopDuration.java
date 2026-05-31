@@ -11,7 +11,7 @@ public class AveragePitStopDuration {
         float sumDuration = 0;
         for (PitStop pitStop : pitStops) {
             count++;
-            sumDuration += pitStop.getPitDuration();
+            sumDuration += pitStop.getPit_duration();
         }
         return sumDuration / count;
     }
